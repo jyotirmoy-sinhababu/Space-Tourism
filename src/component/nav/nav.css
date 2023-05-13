@@ -1,0 +1,29 @@
+.nav-cnt {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.nav-logo-cnt {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.nav-empty-cnt {
+  width: 500px;
+  height: 1px;
+  border: 1px solid black;
+}
+
+.nav-second-cnt {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-btn-cnt {
+  border: 1px solid black;
+  width: 450px;
+  height: 60px;
+}
