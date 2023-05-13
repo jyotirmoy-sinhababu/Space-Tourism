@@ -1,8 +1,10 @@
 .nav-cnt {
+  padding-top: 22px;
   display: flex;
-  width: 100%;
   align-items: center;
   padding-left: 100px;
+  justify-content: space-between;
+  position: relative;
 }
 
 .nav-logo-cnt {
@@ -11,19 +13,31 @@
 }
 
 .nav-empty-cnt {
+  position: absolute;
+  right: 48%;
   width: 500px;
   height: 1px;
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 .nav-second-cnt {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 }
 
 .nav-btn-cnt {
+  display: flex;
+  align-items: center0;
+  justify-content: space-around;
   border: 1px solid black;
-  width: 450px;
+  background-color: black;
+  opacity: 0.5;
+  width: 770px;
   height: 60px;
+}
+
+.nav-btn {
+  border: none;
+  background-color: transparent;
+  color: aliceblue;
 }
