@@ -3,5 +3,57 @@
   height: 100vh;
 }
 
+.home-main-info-cnt {
+  display: flex;
+  padding-top: 150px;
+  padding-left: 150px;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .home-txt-cnt {
+  padding-top: 40px;
+}
+
+.home-first-txt-cnt {
+  width: 320px;
+  height: fit-content;
+}
+
+.home-heading {
+  font-size: 85px;
+  line-height: 0.1px;
+  letter-spacing: 2px;
+}
+
+.home-second-txt-cnt {
+  width: 320px;
+  height: 200px;
+}
+
+.home-second-txt-cnt-info {
+  font-size: 19px;
+}
+
+.home-intro-txt,
+.home-heading {
+  color: aliceblue;
+}
+
+.home-second-txt-cnt-info {
+  color: aliceblue;
+}
+
+.home-explore-cnt {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-txt {
+  color: black;
 }
