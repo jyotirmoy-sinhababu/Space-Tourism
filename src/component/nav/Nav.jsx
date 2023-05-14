@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { NavLink } from 'react-router-dom';
 import './nav.css';
 
 import logo from '../../assets/image/logo.svg';
@@ -14,10 +14,14 @@ const Nav = () => {
         {' '}
         <div className='nav-empty-cnt'></div>
         <div className='nav-btn-cnt'>
-          <button className='nav-btn'>00 HOME</button>
-          <button className='nav-btn'>01 DESTINATION</button>
-          <button className='nav-btn'>02 CREW</button>
-          <button className='nav-btn'>03 TECHNOLOGY</button>
+          <NavLink to='/home' className='nav-btn'>
+            00 HOME
+          </NavLink>
+          <NavLink to='/destination' className='nav-btn'>
+            01 DESTINATION
+          </NavLink>
+          <NavLink className='nav-btn'>02 CREW</NavLink>
+          <NavLink className='nav-btn'>03 TECHNOLOGY</NavLink>
         </div>
       </div>
     </div>
