@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bruno+Ace+SC&family=Montserrat+Alternates:wght@200&family=Nunito+Sans:ital,wght@1,200&display=swap');
+
+.des-card-cnt {
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  padding-right: 25px;
+}
+
+.moon-btn,
+.mars-btn,
+.europa-btn,
+.titan-btn {
+  width: 60px;
+  color: aliceblue;
+  font-family: 'Abril Fatface', cursive;
+  background-color: transparent;
+  border: none;
+}
+.moon-btn:hover {
+  border-bottom: 2px solid white;
+}
+
+.mars-btn:hover {
+  border-bottom: 2px solid white;
+}
+
+.europa-btn:hover {
+  border-bottom: 2px solid white;
+}
+
+.titan-btn:hover {
+  border-bottom: 2px solid white;
+}
+
+.active {
+  border-bottom: 2px solid white;
+}

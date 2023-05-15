@@ -1,14 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bruno+Ace+SC&family=Montserrat+Alternates:wght@200&family=Nunito+Sans:ital,wght@1,200&display=swap');
+
 .destination-cnt {
   display: flex;
   padding-top: 150px;
-  padding-left: 150px;
+  padding-left: 180px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .destination-txt-cnt {
   width: 700px;
   height: 500px;
+}
+.destination-description-cnt {
+  height: 150px;
+  width: 350px;
+  padding-top: 20px;
+  border-bottom: 0.9px solid rgba(254, 254, 254, 0.3);
+}
+
+.destination-description {
+  font-size: 16px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.destination-time-dis-cnt {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+.destination-dis-cnt {
+  border-right: 1px solid rgba(254, 254, 254, 0.3);
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.avg-dis-heading,
+.est-time-heading {
+  font-family: 'Abril Fatface', cursive;
+}
+.avg-dis-data,
+.est-time {
+  color: aliceblue;
+  font-family: 'Bruno Ace SC', cursive;
+}
+
+.destination-dis-cnt {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
 .destination-name,
@@ -18,4 +61,30 @@
 .avg-dis-data,
 .est-time {
   color: aliceblue;
+}
+
+.destination-name {
+  font-size: 82px;
+  font-weight: 500;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.titan:hover {
+  box-shadow: 0 0 24px rgb(143, 126, 69);
+  border-radius: 50%;
+}
+
+.moon:hover {
+  box-shadow: 0 0 24px rgb(253, 253, 251);
+  border-radius: 50%;
+}
+
+.mars:hover {
+  box-shadow: 0 0 24px rgb(194, 104, 104);
+  border-radius: 50%;
+}
+
+.europa:hover {
+  box-shadow: 0 0 24px rgb(101, 101, 175);
+  border-radius: 50%;
 }
