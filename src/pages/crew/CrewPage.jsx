@@ -1,7 +1,12 @@
 import React from 'react';
+import Nav from '../../component/nav/Nav';
 
 const CrewPage = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Nav />
+    </div>
+  );
 };
 
 export default CrewPage;

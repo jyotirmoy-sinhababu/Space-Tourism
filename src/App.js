@@ -6,6 +6,7 @@ import AllPageCnt from './pages/allPages/AllPageCnt';
 import DestinationPage from './pages/destination/DestinationPage';
 import ControlCount from './countState/ControlCount';
 import CrewPage from './pages/crew/CrewPage';
+import TechnologyPage from './pages/technology/TechnologyPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path='/home' element={<HomePage />} />
             <Route path='/destination' element={<DestinationPage />} />
             <Route path='/crew' element={<CrewPage />} />
+            <Route path='/tech' element={<TechnologyPage />} />
           </Route>
         </Routes>
       </div>
