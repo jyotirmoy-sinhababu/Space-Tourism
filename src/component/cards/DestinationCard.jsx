@@ -7,6 +7,11 @@ import { destinations } from '../../data/dataProvider';
 
 import './cardStyle.css';
 
+import moon from '../../assets/destination/image-moon.png';
+import mars from '../../assets/destination/image-mars.png';
+import europa from '../../assets/destination/image-europa.png';
+import titan from '../../assets/destination/image-titan.png';
+
 const DestinationCard = ({}) => {
   const { count } = useContext(countContext);
 
@@ -14,29 +19,13 @@ const DestinationCard = ({}) => {
     <div className='destination-cnt'>
       <div className='destination-image-cnt'>
         {count == 0 && destinations ? (
-          <img
-            className='destination-image'
-            src={destinations[0].images.png}
-            alt='moon'
-          />
+          <img className='destination-image' src={moon} alt='moon' />
         ) : count == 1 && destinations ? (
-          <img
-            className='destination-image'
-            src={destinations[1].images.png}
-            alt='mars'
-          />
+          <img className='destination-image' src={mars} alt='mars' />
         ) : count == 2 && destinations ? (
-          <img
-            className='destination-image'
-            src={destinations[2].images.png}
-            alt='europa'
-          />
+          <img className='destination-image' src={europa} alt='europa' />
         ) : count == 3 && destinations ? (
-          <img
-            className='destination-image'
-            src={destinations[2].images.png}
-            alt='europa'
-          />
+          <img className='destination-image' src={titan} alt='titan' />
         ) : null}
       </div>
       <div className='destination-txt-cnt'>
