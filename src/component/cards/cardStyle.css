@@ -1,0 +1,21 @@
+.destination-cnt {
+  display: flex;
+  padding-top: 150px;
+  padding-left: 150px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.destination-txt-cnt {
+  width: 700px;
+  height: 500px;
+}
+
+.destination-name,
+.destination-description,
+.avg-dis-heading,
+.est-time-heading,
+.avg-dis-data,
+.est-time {
+  color: aliceblue;
+}

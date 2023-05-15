@@ -5,12 +5,13 @@ import DestinationCardBtn from '../sub-component/DestinationCardBtn';
 
 import { destinations } from '../../data/dataProvider';
 
+import './cardStyle.css';
+
 const DestinationCard = ({}) => {
   const { count } = useContext(countContext);
 
   return (
     <div className='destination-cnt'>
-      <h3 className='destination-header'>01 PICK YOUR DESTINATION</h3>
       <div className='destination-image-cnt'>
         {count == 0 && destinations ? (
           <img

@@ -20,7 +20,9 @@ const Nav = () => {
           <NavLink to='/destination' className='nav-btn'>
             01 DESTINATION
           </NavLink>
-          <NavLink className='nav-btn'>02 CREW</NavLink>
+          <NavLink to='/crew' className='nav-btn'>
+            02 CREW
+          </NavLink>
           <NavLink className='nav-btn'>03 TECHNOLOGY</NavLink>
         </div>
       </div>
