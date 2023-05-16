@@ -17,6 +17,7 @@
   font-family: 'Abril Fatface', cursive;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .moon-btn:hover {
   border-bottom: 2px solid white;

@@ -8,6 +8,18 @@
   justify-content: space-between;
 }
 
+.destinationCard-head {
+  display: flex;
+  padding-bottom: 36px;
+  padding-left: 160px;
+}
+
+.destinationCard {
+  color: aliceblue;
+  font-size: 16px;
+  font-family: 'Abril Fatface', cursive;
+}
+
 .destination-txt-cnt {
   width: 700px;
   height: 500px;

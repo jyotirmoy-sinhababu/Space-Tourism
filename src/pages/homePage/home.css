@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bruno+Ace+SC&family=Montserrat+Alternates:wght@200&family=Nunito+Sans:ital,wght@1,200&display=swap');
+
 .home-cnt {
   background-image: url('../../assets/destination/background-desktop.jpg');
   height: 100vh;
@@ -5,55 +7,82 @@
 
 .home-main-info-cnt {
   display: flex;
-  padding-top: 150px;
-  padding-left: 150px;
-  align-items: center;
   justify-content: space-around;
+  padding-top: 150px;
+  align-items: center;
 }
 
 .home-txt-cnt {
-  padding-top: 40px;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .home-first-txt-cnt {
-  width: 320px;
-  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .home-heading {
-  font-size: 85px;
-  line-height: 0.1px;
-  letter-spacing: 2px;
+  color: aliceblue;
+  font-size: 82px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.home-intro-txt {
+  color: aliceblue;
+  font-size: 16px;
+  font-family: 'Abril Fatface', cursive;
 }
 
 .home-second-txt-cnt {
-  width: 320px;
-  height: 200px;
-}
-
-.home-second-txt-cnt-info {
-  font-size: 19px;
-}
-
-.home-intro-txt,
-.home-heading {
-  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
 }
 
 .home-second-txt-cnt-info {
   color: aliceblue;
+  font-size: 16px;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .home-explore-cnt {
-  background-color: white;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
+  background-color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.home-explore-cnt:hover {
+  animation: morph 2s infinite;
+}
+
 .explore-txt {
-  color: black;
+  font-size: 18px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.home-second-txt-cnt {
+  padding-left: 45px;
+}
+
+@keyframes morph {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: rgb(204, 163, 88);
+  }
+  100% {
+    background-color: orange;
+    box-shadow: 0 0 24px orange;
+  }
 }
