@@ -1,7 +1,13 @@
 import React from 'react';
 
+import Nav from '../../component/nav/Nav';
+
 const TechnologyPage = () => {
-  return <div>TechnologyPage</div>;
+  return (
+    <>
+      <Nav />
+    </>
+  );
 };
 
 export default TechnologyPage;
