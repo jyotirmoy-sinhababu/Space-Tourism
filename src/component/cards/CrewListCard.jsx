@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { countContext } from '../../countState/ControlCount';
 
-import CrewCardBtn from '../sub-component/crewCardBtn';
+import CrewCardBtn from '../sub-component/CrewCardBtn';
 
 import { crew } from '../../data/dataProvider';
 
@@ -13,9 +13,9 @@ import victor from '../../assets/crew/image-victor-glover.png';
 const CrewListCard = () => {
   const { count } = useContext(countContext);
   return (
-    <div>
-      <div>
-        <h3></h3>
+    <div className='crew-card-cnt'>
+      <div className=''>
+        <h3>02 MEET YOUR CREW</h3>
         <div>
           <div>
             {' '}

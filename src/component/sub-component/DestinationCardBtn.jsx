@@ -7,7 +7,7 @@ const DestinationCardBtn = () => {
   const { count, countOne, countTwo, countThree, countZero } =
     useContext(countContext);
   return (
-    <div className='des-card-cnt'>
+    <div className='desBtn-card-cnt'>
       <button
         className={`moon-btn ${count == 0 ? 'active' : 'notActive'}`}
         onClick={() => {

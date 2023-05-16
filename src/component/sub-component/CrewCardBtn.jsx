@@ -1,29 +1,36 @@
 import React, { useContext } from 'react';
-import ControlCount from '../../countState/ControlCount';
+import { countContext } from '../../countState/ControlCount';
 
 const CrewCardBtn = () => {
-  const { countOne, countTwo, countThree, countZero } =
-    useContext(ControlCount);
+  const { countOne, countTwo, countThree, countZero, count } =
+    useContext(countContext);
+
   return (
-    <div>
+    <div className='crewBtn-cnt'>
       <button
+        className={`crewBtn ${
+          count == 0 ? 'crewBtnActive' : 'crewBtnNotActive'
+        }`}
         onClick={() => {
-          countZero;
+          countZero();
         }}
       ></button>
       <button
+        className='crewBtn'
         onClick={() => {
-          countOne;
+          countOne();
         }}
       ></button>
       <button
+        className='crewBtn'
         onClick={() => {
-          countTwo;
+          countTwo();
         }}
       ></button>
       <button
+        className='crewBtn'
         onClick={() => {
-          countThree;
+          countThree();
         }}
       ></button>
     </div>
