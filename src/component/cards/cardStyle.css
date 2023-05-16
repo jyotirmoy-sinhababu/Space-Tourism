@@ -107,4 +107,52 @@
 
 .crew-card-cnt {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10%;
+}
+
+.crew-details-cnt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  width: 480px;
+  gap: 48px;
+}
+
+.crew-heading,
+.crew-roles,
+.crew-names,
+.crew-bio {
+  color: aliceblue;
+}
+
+.crew-info-cnt {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.crew-roles {
+  font-size: 25px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.crew-names {
+  font-size: 48px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.crew-bio {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.crewCardBtn-cnt {
+  padding-top: 20px;
+}
+
+.crewCard-img {
+  width: 400px;
+  height: 400px;
 }

@@ -58,6 +58,7 @@ crewCardBtn style
   border-radius: 50%;
   border: 0.3px solid white;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .crewBtn:hover {
