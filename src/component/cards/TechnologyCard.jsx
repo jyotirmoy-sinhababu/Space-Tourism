@@ -13,37 +13,45 @@ const TechnologyCard = () => {
   const { count } = useContext(countContext);
   return (
     <>
-      <div>
-        <h3>03 SPACE LAUNCH 101</h3>
+      <div className='techCard-header-cnt'>
+        <h3 className='techCard-header'>03 SPACE LAUNCH 101</h3>
       </div>
-      <div>
-        <div>
+      <div className='techCard-cnt'>
+        <div className='techCard-btn-cnt'>
           <TechnologyCardBtn />
         </div>
-        <div>
-          <p>THE TERMINOLOGY...</p>
+        <div className='techCard-info-cnt'>
+          <p className='techCard-terminology'>THE TERMINOLOGY...</p>
           {count == 0 && technology ? (
-            <p>{technology[0].name}</p>
+            <p className='techCard-name'>{technology[0].name}</p>
           ) : count == 1 && technology ? (
-            <p>{technology[1].name}</p>
+            <p className='techCard-name'>{technology[1].name}</p>
           ) : count == 2 && technology ? (
-            <p>{technology[2].name}</p>
+            <p className='techCard-name'>{technology[2].name}</p>
           ) : null}
           {count == 0 && technology ? (
-            <p>{technology[0].description}</p>
+            <p className='techCard-description'>{technology[0].description}</p>
           ) : count == 1 && technology ? (
-            <p>{technology[1].description}</p>
+            <p className='techCard-description'>{technology[1].description}</p>
           ) : count == 2 && technology ? (
-            <p>{technology[2].description}</p>
+            <p className='techCard-description'>{technology[2].description}</p>
           ) : null}
         </div>
-        <div>
+        <div className='techCard-img-cnt'>
           {count == 0 && technology ? (
-            <img src={launchVehicle} alt='launchVehicle' />
+            <img
+              className='techCard-img'
+              src={launchVehicle}
+              alt='launchVehicle'
+            />
           ) : count == 1 && technology ? (
-            <img src={spaceCapsule} alt='spaceCapsule' />
+            <img
+              className='techCard-img'
+              src={spaceCapsule}
+              alt='spaceCapsule'
+            />
           ) : count == 2 && technology ? (
-            <img src={spacePort} alt='spacePort' />
+            <img className='techCard-img' src={spacePort} alt='spacePort' />
           ) : null}
         </div>
       </div>

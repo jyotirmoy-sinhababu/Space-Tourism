@@ -156,3 +156,50 @@
   width: 400px;
   height: 400px;
 }
+
+/*technologyCard style*/
+
+.techCard-header {
+  font-family: 'Abril Fatface', cursive;
+}
+
+.techCard-terminology {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.techCard-name {
+  font-size: 55px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.techCard-description {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.techCard-header,
+.techCard-name,
+.techCard-terminology,
+.techCard-description {
+  color: aliceblue;
+}
+
+.techCard-cnt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.techCard-info-cnt {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 400px;
+}
+
+.techCard-header-cnt {
+  display: flex;
+  align-items: center;
+  padding-left: 24%;
+  height: 100px;
+}
