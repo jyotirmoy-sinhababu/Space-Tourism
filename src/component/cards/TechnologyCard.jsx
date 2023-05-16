@@ -5,6 +5,10 @@ import TechnologyCardBtn from '../sub-component/TechnologyCardBtn';
 
 import { technology } from '../../data/dataProvider';
 
+import launchVehicle from '../../assets/technology/image-launch-vehicle-portrait.jpg';
+import spaceCapsule from '../../assets/technology/image-space-capsule-portrait.jpg';
+import spacePort from '../../assets/technology/image-spaceport-portrait.jpg';
+
 const TechnologyCard = () => {
   const { count } = useContext(countContext);
   return (
@@ -35,11 +39,11 @@ const TechnologyCard = () => {
         </div>
         <div>
           {count == 0 && technology ? (
-            <img src='' alt='' />
+            <img src={launchVehicle} alt='launchVehicle' />
           ) : count == 1 && technology ? (
-            <img src='' alt='' />
-          ) : count == 0 && technology ? (
-            <img src='' alt='' />
+            <img src={spaceCapsule} alt='spaceCapsule' />
+          ) : count == 2 && technology ? (
+            <img src={spacePort} alt='spacePort' />
           ) : null}
         </div>
       </div>
