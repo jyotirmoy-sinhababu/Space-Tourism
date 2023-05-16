@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bruno+Ace+SC&family=Montserrat+Alternates:wght@200&family=Nunito+Sans:ital,wght@1,200&display=swap');
 
+/*destination card*/
+
 .destination-cnt {
   display: flex;
   padding-top: 150px;
@@ -99,4 +101,10 @@
 .europa:hover {
   box-shadow: 0 0 24px rgb(101, 101, 175);
   border-radius: 50%;
+}
+
+/*crewCard*/
+
+.crew-card-cnt {
+  display: flex;
 }

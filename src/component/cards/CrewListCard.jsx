@@ -14,55 +14,55 @@ const CrewListCard = () => {
   const { count } = useContext(countContext);
   return (
     <div className='crew-card-cnt'>
-      <div className=''>
-        <h3>02 MEET YOUR CREW</h3>
-        <div>
-          <div>
+      <div className='crew-details-cnt'>
+        <h3 className='crew-heading'>02 MEET YOUR CREW</h3>
+        <div className='crew-info-cnt'>
+          <div className='crew-role-name-cnt'>
             {' '}
             {count == 0 && crew ? (
-              <p>{crew[0].role}</p>
+              <p className='crew-roles'>{crew[0].role}</p>
             ) : count == 1 && crew ? (
-              <p>{crew[1].role}</p>
+              <p className='crew-roles'>{crew[1].role}</p>
             ) : count == 2 && crew ? (
-              <p>{crew[2].role}</p>
+              <p className='crew-roles'>{crew[2].role}</p>
             ) : count == 3 && crew ? (
-              <p>{crew[3].role}</p>
+              <p className='crew-roles'>{crew[3].role}</p>
             ) : null}
             {count == 0 && crew ? (
-              <p>{crew[0].name}</p>
+              <p className='crew-names'>{crew[0].name}</p>
             ) : count == 1 && crew ? (
-              <p>{crew[1].name}</p>
+              <p className='crew-names'>{crew[1].name}</p>
             ) : count == 2 && crew ? (
-              <p>{crew[2].name}</p>
+              <p className='crew-names'>{crew[2].name}</p>
             ) : count == 3 && crew ? (
-              <p>{crew[3].name}</p>
+              <p className='crew-names'>{crew[3].name}</p>
             ) : null}
           </div>
-          <div>
+          <div className='crew-bio-cnt'>
             {count == 0 && crew ? (
-              <p>{crew[0].bio}</p>
+              <p className='crew-bio'>{crew[0].bio}</p>
             ) : count == 1 && crew ? (
-              <p>{crew[1].bio}</p>
+              <p className='crew-bio'>{crew[1].bio}</p>
             ) : count == 2 && crew ? (
-              <p>{crew[2].bio}</p>
+              <p className='crew-bio'>{crew[2].bio}</p>
             ) : count == 3 && crew ? (
-              <p>{crew[3].bio}</p>
+              <p className='crew-bio'>{crew[3].bio}</p>
             ) : null}
           </div>
-          <div>
+          <div className='crewCardBtn-cnt'>
             <CrewCardBtn />
           </div>
         </div>
       </div>
-      <div>
+      <div className='crewCard-img-cnt'>
         {count == 0 && crew ? (
-          <img src={douglas} alt='douglas' />
+          <img className='crewCard-img' src={douglas} alt='douglas' />
         ) : count == 1 && crew ? (
-          <img src={mark} alt='mark' />
+          <img className='crewCard-img' src={mark} alt='mark' />
         ) : count == 2 && crew ? (
-          <img src={victor} alt='victor' />
+          <img className='crewCard-img' src={victor} alt='victor' />
         ) : count == 3 && crew ? (
-          <img src={anousheh} alt='anousheh' />
+          <img className='crewCard-img' src={anousheh} alt='anousheh' />
         ) : null}
       </div>
     </div>

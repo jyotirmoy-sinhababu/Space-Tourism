@@ -63,3 +63,7 @@ crewCardBtn style
 .crewBtn:hover {
   background-color: white;
 }
+
+.crewBtnActive {
+  background-color: white;
+}

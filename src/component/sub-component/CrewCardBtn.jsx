@@ -16,19 +16,25 @@ const CrewCardBtn = () => {
         }}
       ></button>
       <button
-        className='crewBtn'
+        className={`crewBtn ${
+          count == 1 ? 'crewBtnActive' : 'crewBtnNotActive'
+        }`}
         onClick={() => {
           countOne();
         }}
       ></button>
       <button
-        className='crewBtn'
+        className={`crewBtn ${
+          count == 2 ? 'crewBtnActive' : 'crewBtnNotActive'
+        }`}
         onClick={() => {
           countTwo();
         }}
       ></button>
       <button
-        className='crewBtn'
+        className={`crewBtn ${
+          count == 3 ? 'crewBtnActive' : 'crewBtnNotActive'
+        }`}
         onClick={() => {
           countThree();
         }}
