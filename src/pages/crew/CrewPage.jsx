@@ -1,9 +1,11 @@
 import React from 'react';
 import Nav from '../../component/nav/Nav';
 
+import './crewPageStyle.css';
+
 const CrewPage = () => {
   return (
-    <div>
+    <div className='crewPage-main-cnt'>
       <Nav />
     </div>
   );

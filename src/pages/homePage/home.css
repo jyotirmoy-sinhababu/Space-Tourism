@@ -8,6 +8,7 @@
 .home-main-info-cnt {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding-top: 150px;
   align-items: center;
 }
