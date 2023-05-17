@@ -68,3 +68,34 @@ crewCardBtn style
 .crewBtnActive {
   background-color: white;
 }
+
+/*techBtn style*/
+
+.techBtn-cnt {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 50px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.techBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 18px;
+  background-color: transparent;
+  color: aliceblue;
+  border: 1px solid white;
+}
+
+.techBtn:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
+.techBtnActive {
+  background-color: aliceblue;
+  color: black;
+}
