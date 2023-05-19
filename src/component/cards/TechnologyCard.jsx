@@ -35,6 +35,8 @@ const TechnologyCard = () => {
             <p className='techCard-description'>{technology[1].description}</p>
           ) : count == 2 && technology ? (
             <p className='techCard-description'>{technology[2].description}</p>
+          ) : count == 3 && technology ? (
+            <p className='techCard-description'>{technology[2].description}</p>
           ) : null}
         </div>
         <div className='techCard-img-cnt'>
@@ -51,6 +53,8 @@ const TechnologyCard = () => {
               alt='spaceCapsule'
             />
           ) : count == 2 && technology ? (
+            <img className='techCard-img' src={spacePort} alt='spacePort' />
+          ) : count == 3 && technology ? (
             <img className='techCard-img' src={spacePort} alt='spacePort' />
           ) : null}
         </div>
