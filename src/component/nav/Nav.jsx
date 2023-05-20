@@ -8,7 +8,14 @@ const Nav = () => {
   const [btnOn, setBtnOn] = useState(false);
 
   const btnVisible = () => {
-    setBtnOn(true);
+    if (!btnOn) {
+      setBtnOn(true);
+      console.log(btnOn);
+    }
+    if (btnOn) {
+      setBtnOn(false);
+      console.log(btnOn);
+    }
   };
 
   return (
@@ -34,11 +41,7 @@ const Nav = () => {
           </NavLink>
         </div>
         <div className='navLink-mobile-view'>
-          <button
-            onClick={() => {
-              btnVisible();
-            }}
-          >
+          <button onClick={btnVisible}>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width='16'
@@ -56,7 +59,7 @@ const Nav = () => {
           </button>
           <div>
             {!btnOn ? (
-              <div className='nav-btn-cnt'>
+              <div className='nav-btn-cnt-mobile'>
                 <NavLink to='/home' className='nav-btn'>
                   00 HOME
                 </NavLink>

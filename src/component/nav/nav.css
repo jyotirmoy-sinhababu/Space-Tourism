@@ -61,3 +61,17 @@
 .navLink-mobile-view {
   display: none;
 }
+
+@media screen and (max-width: 600px) {
+  .navLink-mobile-view {
+    display: visible;
+  }
+
+  .nav-btn-cnt {
+    display: none;
+  }
+
+  .nav-empty-cnt {
+    display: none;
+  }
+}
