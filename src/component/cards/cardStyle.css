@@ -201,6 +201,13 @@
   height: 100px;
 }
 
+.techCard-info-btn-cnt {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 600px;
+}
+
 @media screen and (max-width: 600px) {
   /*destination card*/
   .destination-cnt {
@@ -253,5 +260,76 @@
     border-right: none;
     width: 175px;
     gap: 3px;
+  }
+
+  /*
+  crew card mobile view*/
+  .crew-card-cnt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10%;
+  }
+
+  .crew-role-name-cnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .crew-names {
+    font-size: 38px;
+  }
+
+  .crew-bio-cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .crew-bio {
+    width: 350px;
+  }
+
+  .crewCard-img {
+    width: 230px;
+    height: 300px;
+  }
+
+  /*technologyCard*/
+
+  .techCard-cnt {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0px;
+  }
+
+  .techCard-img {
+    width: 350px;
+    height: 280px;
+  }
+
+  .techCard-info-btn-cnt {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+  }
+
+  .techCard-btn-cnt {
+    padding-top: 20px;
+  }
+
+  .techCard-terminology {
+    padding-top: 10px;
+  }
+
+  .techCard-name {
+    font-size: 48px;
   }
 }

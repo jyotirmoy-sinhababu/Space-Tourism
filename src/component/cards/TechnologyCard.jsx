@@ -17,28 +17,40 @@ const TechnologyCard = () => {
         <h3 className='techCard-header'>03 SPACE LAUNCH 101</h3>
       </div>
       <div className='techCard-cnt'>
-        <div className='techCard-btn-cnt'>
-          <TechnologyCardBtn />
+        <div className='techCard-info-btn-cnt'>
+          {' '}
+          <div className='techCard-btn-cnt'>
+            <TechnologyCardBtn />
+          </div>
+          <div className='techCard-info-cnt'>
+            <p className='techCard-terminology'>THE TERMINOLOGY...</p>
+            {count == 0 && technology ? (
+              <p className='techCard-name'>{technology[0].name}</p>
+            ) : count == 1 && technology ? (
+              <p className='techCard-name'>{technology[1].name}</p>
+            ) : count == 2 && technology ? (
+              <p className='techCard-name'>{technology[2].name}</p>
+            ) : null}
+            {count == 0 && technology ? (
+              <p className='techCard-description'>
+                {technology[0].description}
+              </p>
+            ) : count == 1 && technology ? (
+              <p className='techCard-description'>
+                {technology[1].description}
+              </p>
+            ) : count == 2 && technology ? (
+              <p className='techCard-description'>
+                {technology[2].description}
+              </p>
+            ) : count == 3 && technology ? (
+              <p className='techCard-description'>
+                {technology[2].description}
+              </p>
+            ) : null}
+          </div>
         </div>
-        <div className='techCard-info-cnt'>
-          <p className='techCard-terminology'>THE TERMINOLOGY...</p>
-          {count == 0 && technology ? (
-            <p className='techCard-name'>{technology[0].name}</p>
-          ) : count == 1 && technology ? (
-            <p className='techCard-name'>{technology[1].name}</p>
-          ) : count == 2 && technology ? (
-            <p className='techCard-name'>{technology[2].name}</p>
-          ) : null}
-          {count == 0 && technology ? (
-            <p className='techCard-description'>{technology[0].description}</p>
-          ) : count == 1 && technology ? (
-            <p className='techCard-description'>{technology[1].description}</p>
-          ) : count == 2 && technology ? (
-            <p className='techCard-description'>{technology[2].description}</p>
-          ) : count == 3 && technology ? (
-            <p className='techCard-description'>{technology[2].description}</p>
-          ) : null}
-        </div>
+
         <div className='techCard-img-cnt'>
           {count == 0 && technology ? (
             <img

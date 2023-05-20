@@ -103,3 +103,14 @@ crewCardBtn style
   background-color: aliceblue;
   color: black;
 }
+
+@media screen and (max-width: 600px) {
+  .techBtn-cnt {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 250px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
