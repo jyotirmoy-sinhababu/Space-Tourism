@@ -46,6 +46,9 @@
 }
 
 .destination-dis-cnt {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
   border-right: 1px solid rgba(254, 254, 254, 0.3);
   width: 175px;
   display: flex;
@@ -60,12 +63,6 @@
 .est-time {
   color: aliceblue;
   font-family: 'Bruno Ace SC', cursive;
-}
-
-.destination-dis-cnt {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
 }
 
 .destination-name,
@@ -202,4 +199,59 @@
   align-items: center;
   padding-left: 24%;
   height: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  /*destination card*/
+  .destination-cnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  .img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .destinationCard-head {
+    display: flex;
+    padding-bottom: 36px;
+    padding-left: 0px;
+  }
+
+  .destination-txt-cnt {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .destination-btn-cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .destination-name-cnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 25px;
+  }
+
+  .destination-time-dis-cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .destination-dis-cnt {
+    display: flex;
+    flex-direction: none;
+    gap: 3px;
+    border-right: none;
+    width: 175px;
+    gap: 3px;
+  }
 }

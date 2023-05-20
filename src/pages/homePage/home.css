@@ -8,7 +8,6 @@
 .home-main-info-cnt {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   padding-top: 150px;
   align-items: center;
 }
@@ -97,5 +96,46 @@
   0% {
     background-color: orange;
     box-shadow: 0 0 84px orange;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-cnt {
+    background-image: url('../../assets/destination/background-home-mobile.jpg');
+    height: 100vh;
+  }
+
+  .home-main-info-cnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 150px;
+    align-items: center;
+  }
+
+  .home-txt-cnt {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .home-heading {
+    font-size: 62px;
+  }
+
+  .home-second-txt-cnt {
+    padding-top: 20px;
+  }
+
+  .home-explore-cnt {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -2,3 +2,10 @@
   background-image: url('../../assets/destination/destination.jpg');
   height: 100vh;
 }
+
+@media screen and (max-width: 600px) {
+  .destination-page-cnt {
+    background-image: url('../../assets/destination/background-home-mobile.jpg');
+    height: 100vh;
+  }
+}

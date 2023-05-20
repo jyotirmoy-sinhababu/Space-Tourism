@@ -7,7 +7,7 @@ import logo from '../../assets/destination/logo.svg';
 import { FaBars } from 'react-icons/fa';
 
 const Nav = () => {
-  const [btnOn, setBtnOn] = useState(false);
+  const [btnOn, setBtnOn] = useState(true);
 
   const btnVisible = () => {
     if (!btnOn) {

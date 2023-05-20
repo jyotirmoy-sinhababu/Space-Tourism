@@ -23,20 +23,28 @@ const DestinationCard = ({}) => {
           <div className='destinationCard-head'>
             <p className='destinationCard'>01 PICK YOUR DESTINATION</p>
           </div>
-          <div className='destination-image-cnt '>
+          <div className='img  destination-image-cnt '>
             {count == 0 && destinations ? (
-              <img className='destination-image moon ' src={moon} alt='moon' />
+              <img
+                className='img  destination-image moon '
+                src={moon}
+                alt='moon'
+              />
             ) : count == 1 && destinations ? (
-              <img className='destination-image mars' src={mars} alt='mars' />
+              <img
+                className='img  destination-image mars'
+                src={mars}
+                alt='mars'
+              />
             ) : count == 2 && destinations ? (
               <img
-                className='destination-image europa'
+                className='img  destination-image europa'
                 src={europa}
                 alt='europa'
               />
             ) : count == 3 && destinations ? (
               <img
-                className='destination-image titan'
+                className='img  destination-image titan'
                 src={titan}
                 alt='titan'
               />
@@ -48,7 +56,7 @@ const DestinationCard = ({}) => {
           <div className='destination-btn-cnt'>
             <DestinationCardBtn />
           </div>
-          <div style={{ paddingLeft: '25px' }}>
+          <div style={{ paddingLeft: '25px' }} className='destination-name-cnt'>
             {' '}
             {count == 0 && destinations ? (
               <p className='destination-name'>{destinations[0].name}</p>
