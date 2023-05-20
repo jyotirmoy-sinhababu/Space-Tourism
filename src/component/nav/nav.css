@@ -57,3 +57,7 @@
 .active {
   border-bottom: 4px solid white;
 }
+
+.navLink-mobile-view {
+  display: none;
+}

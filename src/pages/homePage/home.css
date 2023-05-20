@@ -86,4 +86,16 @@
     background-color: orange;
     box-shadow: 0 0 24px orange;
   }
+  50% {
+    background-color: orange;
+    box-shadow: 0 0 44px orange;
+  }
+  25% {
+    background-color: orange;
+    box-shadow: 0 0 84px orange;
+  }
+  0% {
+    background-color: orange;
+    box-shadow: 0 0 84px orange;
+  }
 }
