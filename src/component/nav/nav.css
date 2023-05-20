@@ -62,6 +62,12 @@
   display: none;
 }
 
+@media screen and (max-width: 1260px) {
+  .nav-empty-cnt {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .nav-cnt {
     display: flex;

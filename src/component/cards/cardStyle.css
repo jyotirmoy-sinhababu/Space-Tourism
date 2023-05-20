@@ -208,7 +208,7 @@
   width: 600px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   /*destination card*/
   .destination-cnt {
     display: flex;
@@ -219,8 +219,8 @@
   }
 
   .img {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
   }
 
   .destinationCard-head {
@@ -331,5 +331,16 @@
 
   .techCard-name {
     font-size: 48px;
+  }
+
+  .techCard-info-cnt {
+    padding-left: 4%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .img {
+    width: 200px;
+    height: 200px;
   }
 }

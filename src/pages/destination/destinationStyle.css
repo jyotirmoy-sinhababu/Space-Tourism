@@ -3,6 +3,13 @@
   height: 100vh;
 }
 
+@media screen and (max-width: 900px) {
+  .destination-page-cnt {
+    background-image: url('../../assets/destination/background-home-tablet.jpg');
+    height: 100vh;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .destination-page-cnt {
     background-image: url('../../assets/destination/background-home-mobile.jpg');

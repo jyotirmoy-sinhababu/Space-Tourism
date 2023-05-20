@@ -99,9 +99,9 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .home-cnt {
-    background-image: url('../../assets/destination/background-home-mobile.jpg');
+    background-image: url('../../assets/destination/background-home-tablet.jpg');
     height: 100vh;
   }
 
@@ -137,5 +137,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-cnt {
+    background-image: url('../../assets/destination/background-home-mobile.jpg');
+    height: 100vh;
   }
 }
