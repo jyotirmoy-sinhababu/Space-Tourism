@@ -63,8 +63,22 @@
 }
 
 @media screen and (max-width: 600px) {
+  .nav-cnt {
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+
   .navLink-mobile-view {
-    display: visible;
+    position: absolute;
+    display: block;
+  }
+
+  .navLink-mobile-main-btn-cnt {
+    display: flex;
   }
 
   .nav-btn-cnt {
@@ -73,5 +87,25 @@
 
   .nav-empty-cnt {
     display: none;
+  }
+  .nav-logo-cnt {
+    padding-left: 30px;
+  }
+
+  .nav-btn-cnt-mobile {
+    width: 250px;
+    height: 600px;
+    padding-left: 25px;
+    background-color: black;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 88%;
+    right: 10%;
+  }
+
+  .mobile-view-btn {
+    font-size: 22px;
   }
 }
